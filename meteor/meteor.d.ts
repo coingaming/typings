@@ -508,6 +508,7 @@ declare module Meteor {
 	function userId(): string;
 	var users: Mongo.Collection<User>;
 	function wrapAsync(func: Function, context?: Object): any;
+	function bindEnvironment(func: Function, errorFunc?: Function): any;
 }
 
 declare module Mongo {
