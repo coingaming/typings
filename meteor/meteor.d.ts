@@ -500,7 +500,7 @@ declare module Meteor {
 	var release: string;
 	function setInterval(func: Function, delay: number): number;
 	function setTimeout(func: Function, delay: number): number;
-	var settings: {[id:string]: any};
+	var settings: any;
 	function startup(func: Function): void;
 	function status(): Meteor.StatusEnum;
 	function subscribe(name: string, ...args): Meteor.SubscriptionHandle;
