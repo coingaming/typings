@@ -133,6 +133,7 @@ declare module "winston" {
     Http: TransportInstance;
     Memory: TransportInstance;
     Webhook: TransportInstance;
+    Papertrail: TransportInstance;
   }
 
   export interface TransportOptions {
