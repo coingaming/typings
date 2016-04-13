@@ -9,6 +9,7 @@ declare module "amqp" {
 		disconnect: () => void;
 		queue: (name, options?, openCallback?: Function) => Queue;
 		exchange: (name?, options?, openCallback?: Function) => Exchange;
+		on: (name: string, callback?: Function) => void;
 	}
 
 	interface Queue {
@@ -23,7 +24,6 @@ declare module "amqp" {
 	}
 
 	interface Exchange {
-		on: (name: string, callback?: Function) => void;
 		publish: (routingKey, message, options, callback: Function) => void;
 		destroy: (ifUnused: boolean) => void;
 		bind: (srcExchange, routingKey, callback?: Function) => void;
