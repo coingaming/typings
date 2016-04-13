@@ -35,7 +35,7 @@ declare module "fibers/future" {
         resolveSuccess(fn: Function): void;
         return(result?: any): void;
         throw (error: any): void;
-        wait (): void;
+        wait (): any;
         static wait(future: Future);
         static wait(future_list: Future[]);
         static wrap(fn: Function): Future
