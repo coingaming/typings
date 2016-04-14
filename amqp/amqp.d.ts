@@ -1,6 +1,4 @@
-/// <reference path="../node/node.d.ts" />
 
-declare module "amqp" {
 
 	function createConnection(options, implOptions): Connection;
 
@@ -31,4 +29,3 @@ declare module "amqp" {
 		bind_headers: (exchange, routing, bindCallback?: Function) => void;
 	}
 
-}
