@@ -1,6 +1,6 @@
 
 
-	function createConnection(options, implOptions): Connection;
+	export function createConnection(options, implOptions): Connection;
 
 	interface Connection {
 		publish: (routingKey, body, options, callback: Function) => void;
