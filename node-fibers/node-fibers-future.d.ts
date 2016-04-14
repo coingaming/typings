@@ -11,35 +11,35 @@ interface Fiber {
 
 // declare module "fibers" {
 
-    function Fiber(fn: Function): Fiber;
+    // function Fiber(fn: Function): Fiber;
 
-    module Fiber {
-        export var current: Fiber;
-        export function yield(value?: any): any
-    }
+    // module Fiber {
+    //     export var current: Fiber;
+    //     export function yield(value?: any): any
+    // }
 
-    export = Fiber;
+    // export = Fiber;
 // }
 
 // declare module "fibers/future" {
 
-//     class Future {
-//         constructor();
-//         detach(): void;
-//         get(): any;
-//         isResolved (): boolean;
-//         proxy(future: Future): void;
-//         proxyErrors(futureOrList: any): Future;
-//         resolver(): Function;
-//         resolve(fn: Function): void;
-//         resolveSuccess(fn: Function): void;
-//         return(result?: any): void;
-//         throw (error: any): void;
-//         wait (): any;
-//         static wait(future: Future);
-//         static wait(future_list: Future[]);
-//         static wrap(fn: Function): Future
-//     }
+    class Future {
+        constructor();
+        detach(): void;
+        get(): any;
+        isResolved (): boolean;
+        proxy(future: Future): void;
+        proxyErrors(futureOrList: any): Future;
+        resolver(): Function;
+        resolve(fn: Function): void;
+        resolveSuccess(fn: Function): void;
+        return(result?: any): void;
+        throw (error: any): void;
+        wait (): any;
+        static wait(future: Future);
+        static wait(future_list: Future[]);
+        static wrap(fn: Function): Future
+    }
 
-//     export = Future;
+    export = Future;
 // }
