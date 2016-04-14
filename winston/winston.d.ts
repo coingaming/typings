@@ -1,13 +1,3 @@
-// Type definitions for winston
-// Project: https://github.com/flatiron/winston
-// Definitions by: bonnici <https://github.com/bonnici>, Peter Harris <https://github.com/codeanimal>
-// Definitions: https://github.com/borisyankov/DefinitelyTyped
-
-// Imported from: https://github.com/soywiz/typescript-node-definitions/winston.d.ts
-
-/// <reference path="../node/node.d.ts" />
-
-declare module "winston" {
 
   export var transports: Transports;
   export var Transport: TransportStatic;
@@ -162,4 +152,3 @@ declare module "winston" {
     start: Date;
     done: (msg: string) => LoggerInstance;
   }
-}
