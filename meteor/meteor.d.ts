@@ -787,6 +787,8 @@ declare module Meteor {
 	}
 
 	export var _htmlFilters: Function[];
+	
+	export function publishWithRelations(options);
 
 }
 
