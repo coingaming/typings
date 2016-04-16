@@ -3,7 +3,7 @@
 // Definitions by: Cary Haynie <https://github.com/caryhaynie>
 // Definitions: https://github.com/borisyankov/DefinitelyTyped
 
-export interface Fiber {
+interface Fiber {
     reset: () => any;
     run: (param?: any) => any;
     throwInto: (ex: any) => any;
@@ -23,7 +23,7 @@ export interface Fiber {
 
 // declare module "fibers/future" {
 
-    export class Future {
+    class Future {
         constructor();
         detach(): void;
         get(): any;
@@ -40,5 +40,7 @@ export interface Fiber {
         static wait(future_list: Future[]);
         static wrap(fn: Function): Future
     }
+    
+    exports = Future;
 
 // }
