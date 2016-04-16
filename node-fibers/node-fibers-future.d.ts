@@ -41,6 +41,6 @@ interface Fiber {
         static wrap(fn: Function): Future
     }
     
-    exports = Future;
+    export = Future;
 
 // }
