@@ -2212,15 +2212,6 @@ declare module SpacebarsCompiler {
 	function compile(template: string, data?: any);
 }
 
-declare module MongoInternals {
-
-	var oplogStats: any;
-
-	function defaultRemoteCollectionDriver(): {mongo: {db: MongoDB.Db}};
-	function RemoteCollectionDriver(mongo_url: string, options?: any): void;
-
-}
-
 declare module Mongo {
 
 	/**
