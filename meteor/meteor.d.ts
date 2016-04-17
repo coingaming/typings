@@ -1,3 +1,5 @@
+/// <reference path="../jquery/jquery.d.ts" />
+
 declare var Package: any;
 declare var app: string;
 declare module Meteor {
