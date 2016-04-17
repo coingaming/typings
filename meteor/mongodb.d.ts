@@ -7,6 +7,15 @@
 
 /// <reference path='node.d.ts' />
 
+declare module MongoInternals {
+
+	var oplogStats: any;
+
+	function defaultRemoteCollectionDriver(): {mongo: {db: MongoDB.Db}};
+	function RemoteCollectionDriver(mongo_url: string, options?: any): void;
+
+}
+
 declare module MongoDB {
 
 	// Class documentation : http://mongodb.github.io/node-mongodb-native/api-generated/mongoclient.html
