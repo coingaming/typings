@@ -1,1 +1,1 @@
-export function carry(conn: Connection, callback?: Function): EventEmitter;
+export function carry(conn: "tls".ClearTextStream, callback?: Function): EventEmitter;
