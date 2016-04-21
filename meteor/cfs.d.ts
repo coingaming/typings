@@ -171,5 +171,5 @@ declare module FS.Store {
 }
 
 declare module FS.Utility {
-	export function eachFile(event: MeteorTemplateEvent, callback: (file) => void);
+	export function eachFile(event: any, callback: (file) => void);
 }
