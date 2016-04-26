@@ -27,5 +27,6 @@
 		bind: (srcExchange, routingKey, callback?: Function) => void;
 		unbind: (srcExchange, routingKey, callback?: Function) => void;
 		bind_headers: (exchange, routing, bindCallback?: Function) => void;
+		on: (name: string, callback?: Function) => void;
 	}
 
