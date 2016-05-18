@@ -781,9 +781,6 @@ declare module Meteor {
 
 		_makeNewID(): string;
 
-		attachSchema(schema: SimpleSchema);
-		simpleSchema(): SimpleSchema;
-
 	}
 
 	export var _htmlFilters: Function[];
