@@ -286,6 +286,10 @@ declare module Meteor {
 		 */
 		observeChanges(callbacks: ObserveChangesCallbacks): LiveQueryHandle;
 
+		_publishCursor(sub);
+
+	   	_getCollectionName(): string;
+
 	}
 
 	/**
@@ -662,6 +666,7 @@ declare module Meteor {
 		connection?: DDP.Connection;
 		idGeneration?: string;
 		transform?: (doc: any) => any;
+		internalTransform?: (doc: any) => any;
 	}
 
 	export class SmartCollection extends Collection {
