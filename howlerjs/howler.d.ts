@@ -5,8 +5,7 @@
 
 
 declare class HowlerGlobal {
-    mute(): HowlerGlobal;
-    unmute(): HowlerGlobal;
+    mute(muted:boolean, soundId?:number): HowlerGlobal;
     volume(): number;
     volume(volume: number): HowlerGlobal;
     codecs(extension: string): boolean;
@@ -54,8 +53,7 @@ declare class Howl {
     play(sprite?: string, callback?: (soundId: number) => void): Howl;
     pause(soundId?: number): Howl;
     stop(soundId?: number): Howl;
-    mute(soundId?: number): Howl;
-    unmute(soundId?: number): Howl;
+    mute(muted:boolean, soundId?: number): Howl;  
     fade(from: number, to: number, duration: number, callback?: IHowlCallback, soundId?: number): Howl;
     loop(): boolean;
     loop(loop: boolean): Howl;
